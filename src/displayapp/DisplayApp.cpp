@@ -4,6 +4,7 @@
 #include "displayapp/screens/Motion.h"
 #include "displayapp/screens/Timer.h"
 #include "displayapp/screens/Alarm.h"
+#include "displayapp/screens/Home.h"
 #include "components/battery/BatteryController.h"
 #include "components/ble/BleController.h"
 #include "components/datetime/DateTimeController.h"
@@ -449,6 +450,10 @@ void DisplayApp::LoadScreen(Apps app, DisplayApp::FullRefreshDirections directio
       break;
     case Apps::Alarm:
       currentScreen = std::make_unique<Screens::Alarm>(alarmController, settingsController.GetClockType(), *systemTask, motorController);
+      break;
+    case Apps::Home:
+      //currentScreen = std::make_unique<Screens::Home>(this, bleController);
+      currentScreen = std::make_unique<Screens::Home>();
       break;
 
     // Settings

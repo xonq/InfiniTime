@@ -384,6 +384,7 @@ list(APPEND SOURCE_FILES
         displayapp/screens/Label.cpp
         displayapp/screens/FirmwareUpdate.cpp
         displayapp/screens/Music.cpp
+        displayapp/screens/Home.cpp
         displayapp/screens/Weather.cpp
         displayapp/screens/Navigation.cpp
         displayapp/screens/Metronome.cpp
@@ -462,6 +463,7 @@ list(APPEND SOURCE_FILES
         components/ble/CurrentTimeService.cpp
         components/ble/AlertNotificationService.cpp
         components/ble/MusicService.cpp
+        components/ble/HomeService.cpp
         components/ble/weather/WeatherService.cpp
         components/ble/NavigationService.cpp
         components/ble/BatteryInformationService.cpp
@@ -528,6 +530,7 @@ list(APPEND RECOVERY_SOURCE_FILES
         components/ble/CurrentTimeService.cpp
         components/ble/AlertNotificationService.cpp
         components/ble/MusicService.cpp
+        components/ble/HomeService.cpp
         components/ble/weather/WeatherService.cpp
         components/ble/BatteryInformationService.cpp
         components/ble/FSService.cpp

@@ -55,7 +55,7 @@ namespace Pinetime {
           {Symbols::map, Apps::Navigation},
           {Symbols::none, Apps::None},
 
-          // {"M", Apps::Motion},
+          {"M", Apps::Motion},
         }};
         ScreenList<nScreens> screens;
       };

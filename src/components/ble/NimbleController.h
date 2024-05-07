@@ -22,7 +22,7 @@
 #include "components/ble/NavigationService.h"
 #include "components/ble/ServiceDiscovery.h"
 #include "components/ble/MotionService.h"
-#include "components/ble/weather/WeatherService.h"
+#include "components/ble/SimpleWeatherService.h"
 #include "components/fs/FS.h"
 
 namespace Pinetime {
@@ -72,7 +72,7 @@ namespace Pinetime {
         return anService;
       };
 
-      Pinetime::Controllers::WeatherService& weather() {
+      Pinetime::Controllers::SimpleWeatherService& weather() {
         return weatherService;
       };
 
@@ -105,7 +105,7 @@ namespace Pinetime {
       CurrentTimeService currentTimeService;
       MusicService musicService;
       HomeService homeService;
-      WeatherService weatherService;
+      SimpleWeatherService weatherService;
       NavigationService navService;
       BatteryInformationService batteryInformationService;
       ImmediateAlertService immediateAlertService;

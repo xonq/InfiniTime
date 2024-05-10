@@ -544,10 +544,6 @@ void DisplayApp::LoadScreen(Apps app, DisplayApp::FullRefreshDirections directio
     case Apps::FlashLight:
       currentScreen = std::make_unique<Screens::FlashLight>(*systemTask, brightnessController);
       break;
-    //FIXME
-    case Apps::Home:
-      currentScreen = std::make_unique<Screens::Home>(systemTask->nimble().home(), motorController);
-      break;
     default: {
       const auto* d = std::find_if(userApps.begin(), userApps.end(), [app](const AppDescription& appDescription) {
         return appDescription.app == app;

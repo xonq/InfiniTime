@@ -47,6 +47,9 @@ Testing/Temporary/
 #build files
 src/nRF5_SDK_15.3.0_59ac345
 src/arm-none-eabi
+src/libs/arduinoFFT
+src/libs/littlefs
+src/libs/lvgl
 
 # clangd
 .cache/
